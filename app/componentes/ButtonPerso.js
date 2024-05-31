@@ -1,62 +1,48 @@
 import React from 'react'
 import {Text, View, TouchableOpacity } from 'react-native';
-import { Link } from 'expo-router';
+import { Link,router } from 'expo-router';
 
 
-function ButtonPerso({texto, accion, color, ruta}) {
+function ButtonPerso({texto, color, fcRuta}) {
 
-    console.log(ruta)
+  const goPersonalizar = () => {
+    console.log("Personalizar");
+    router.push(fcRuta);
+  }
+    
     return (
-        <View>
-         {ruta ? (
-            <Link href={ruta} asChild>
+        <View
+        style={{
+            flexDirection: 'column',
+            justifyContent: 'center',
+            marginTop: 20,
+            width: 'auto',
+        }}
+        >
+        
             <TouchableOpacity
-            onPress={accion}
             style={{
-              backgroundColor: color,
-              padding: 10,
-              borderRadius: 10,
-              width: 300,
-              alignItems: 'center',
-              marginTop:10,
-              marginLeft: 10,
-              marginBottom: 10,
+                backgroundColor: color,
+                padding: 12,
+                borderRadius: 12,
+                marginTop: 2,
+                width: 300,
+                alignSelf: 'center',
+             //   marginBottom: 12,
             }}
+            onPress={goPersonalizar}
             >
-            <Text
-            style={{
-              fontSize: 20,
-              color: 'white',
-            }}
-            >
-              {texto}
-            </Text>
+                <Text
+                style={{
+                    color: 'white',
+                    textAlign: 'center',
+                    fontSize: 20,
+                    fontWeight: 'bold',
+                }}
+                >
+                    {texto}
+                </Text>
             </TouchableOpacity>
-            </Link>
-        ) : (
-            <TouchableOpacity
-            onPress={accion}
-            style={{
-              backgroundColor: color,
-              padding: 10,
-              borderRadius: 10,
-              width: 300,
-              alignItems: 'center',
-              marginTop:10,
-              marginLeft: 10,
-              marginBottom: 10,
-            }}
-            >
-            <Text
-            style={{
-              fontSize: 20,
-              color: 'white',
-            }}
-            >
-              {texto}
-            </Text>
-            </TouchableOpacity>
-        )}
         </View>
 
     )

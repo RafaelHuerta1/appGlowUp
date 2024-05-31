@@ -2,8 +2,9 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import ButtonPerso from './componentes/ButtonPerso';
 import React, { useState, useEffect } from 'react';
+import { Link, router } from 'expo-router';
 
-const imgFondoUno = require('./assets/img1.jpg');
+const imgFondoUno = require('./assets/img1Women.jpg');
 const imgFondoDos = require('./assets/img2.jpg');
 
 
@@ -24,8 +25,8 @@ export default function App() {
   return (
     <View style={styles.container}>
       
-      <Image source={image} style={{width: 500, height: 400,
-      position: 'absolute', top: 50, left: 0
+      <Image source={image} style={{width: '100%', height: 400,
+      position: 'absolute', top: 23, left: 0
         
       }} />
 
@@ -71,16 +72,15 @@ export default function App() {
 
           <ButtonPerso
       texto="Iniciar Sesión"
-      accion={() => console.log('Iniciar Sesión')}
       color="blue"
-      ruta="/signIn/SingIn"
+      fcRuta='/SignIn'
       />
 
       
        <ButtonPerso
       texto="Crear Cuenta"
-      accion={() => console.log('Iniciar Sesión')}
-      color="#d8b4fe" // morado claro #d8b4fe
+      color="blue" // morado claro #d8b4fe
+      fcRuta='/signUp'
       />
       </View>
 
