@@ -6,8 +6,8 @@ import React, { useState, useEffect } from 'react';
 const imgFondoUno = require('./assets/img1Women.jpg');
 const imgFondoDos = require('./assets/img2.jpg');
 
-
-
+// id android: 437389181662-lqe6iok69q93uq3o4puv08cbcbph815n.apps.googleusercontent.com
+// id web: 437389181662-lqe6iok69q93uq3o4puv08cbcbph815n.apps.googleusercontent.com
 
 export default function App() {
 

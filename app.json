@@ -4,10 +4,10 @@
     "slug": "appGlowUp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./app/assets/logoFinal.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./app/assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,18 +17,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/logoGlowUp.png",
+        "foregroundImage": "./app/assets/logoFinal.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.rafa04huerts.appGlowUp"
     },
     "web": {
-      "favicon": "./assets/logoGlowUp.png"
+      "favicon": "./app/assets/logoFinal.png"
     },
     "plugins": [
       "expo-router"
     ],
-    "scheme": "appGlowUp",
+    "scheme": "appglowup",
     "extra": {
       "router": {
         "origin": false
