@@ -12,20 +12,30 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rafa04huerts.appGlowUp"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logoGlowUp.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rafa04huerts.appGlowUp"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/logoGlowUp.png"
     },
     "plugins": [
       "expo-router"
     ],
-    "scheme": "appGlowUp"
+    "scheme": "appGlowUp",
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "e2cc1bad-d8ed-4160-aa7c-f38db9b73ee9"
+      }
+    }
   }
 }

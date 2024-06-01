@@ -1,6 +1,8 @@
 import React from 'react'
 import {Text, View, TouchableOpacity } from 'react-native';
-import { Link,router } from 'expo-router';
+import { router } from 'expo-router';
+
+// id client web: 437389181662-3unf848vk7rfno1i7ohii6o65c522oh3.apps.googleusercontent.com
 
 
 function ButtonPerso({texto, color, fcRuta}) {
